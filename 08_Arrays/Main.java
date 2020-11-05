@@ -1,3 +1,5 @@
+import java.util.ArrayList; 
+
 public class Main
 {
     public static void main(String[] args)
@@ -17,10 +19,26 @@ public class Main
         array2[3] = 4; 
         array2[4] = 5; 
         array2[5] = 6;
-        System.out.println(array2[20]); 
+        System.out.println(array2[9]); 
 
         // Arrays Propeties: 
         int length = array1.length;
         System.out.println(length); 
+        
+        // Multiple Arrays: 
+        int[][] array3 = {{1,2,3,4},
+                          {5,6,7,8}};
+        System.out.println(array3[0][0]);
+
+        // ArrayList: can be expanded!
+        ArrayList<Integer> myArrayList = new ArrayList<Integer>();
+        myArrayList.add(1);
+        myArrayList.add(32);
+        myArrayList.add(100);
+        System.out.printf("Array List [1] = ");
+        System.out.println(myArrayList.get(1));
+        System.out.println(myArrayList.size()); 
+        myArrayList.remove(2);
+        System.out.println(myArrayList.size()); 
     }
 }
