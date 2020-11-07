@@ -67,6 +67,32 @@ public class Main{
             glass.fill();
         else
             glass.clean();
+        
+        while (glass.serve()){
+            System.out.println("Liquid Type: " + glass.getLiquidType() + " | " + 
+                               "Liquid Amount: " + glass.getLiquidAmount());
 
+        };
+
+        // Setter with the same name but with input!
+        glass.fill(25);
+        System.out.println("Liquid Type: " + glass.getLiquidType() + " | " + 
+                            "Liquid Amount: " + glass.getLiquidAmount());
+
+        /*
+        Raise Exception!:
+        */ 
+        glass.fill(75); // higher than 75 will raise exception!
+        System.out.println("Liquid Type: " + glass.getLiquidType() + " | " + 
+                            "Liquid Amount: " + glass.getLiquidAmount());
+
+        /*
+        Try and Exception:
+        */
+        try{
+            glass.fill(25);
+        } catch(IllegalArgumentException error){
+            System.out.println("Error message: " + error.getMessage());
+        }
     }
 }
