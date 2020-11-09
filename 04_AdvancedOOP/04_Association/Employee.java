@@ -1,0 +1,4 @@
+class Employee {
+    Bank bank;
+}
+
