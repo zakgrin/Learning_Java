@@ -41,6 +41,7 @@ public class ReadingFile{
         while ( (data = bufferedReader.readLine()) != null) {
             System.out.println(data);
         }
+        bufferedReader.close();
         finalTime = System.currentTimeMillis(); 
         System.out.println("time: " + (finalTime-initTime) + " miliseconds");
     } 
