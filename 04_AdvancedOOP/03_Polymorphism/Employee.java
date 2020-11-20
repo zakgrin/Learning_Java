@@ -29,7 +29,7 @@ public abstract class Employee {
     @Override
     public String toString() {
         return String.format(" - Name: %s\n - ID Number: %s\n", getName(), getIdNumber()); 
-        // note that format here is simillar printf()
+        // note that format here is similar printf()
     }
 
     // Abstract functions have no code inside (the implementation depends on subclasses!)

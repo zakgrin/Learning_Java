@@ -5,14 +5,14 @@ public class Vehicle {
     protected int numberOfWheels;
     protected String color;
 
-    // Custructor with input: 
+    // Constructor with input: 
     public Vehicle(String madeIn, int numberOfWheels, String color) {
         this.madeIn = madeIn;
         this.numberOfWheels = numberOfWheels;
         this.color = color;
     }
     
-    // Custructor with defult: 
+    // Constructor with default: 
     public Vehicle() {
 
     }
